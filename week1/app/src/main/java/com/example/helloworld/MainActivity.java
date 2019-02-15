@@ -1,5 +1,6 @@
 package com.example.helloworld;
 
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -18,6 +19,9 @@ public class MainActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        ActionBar ab= getSupportActionBar();
+        ab.hide();
+
         btnToast = (Button) findViewById(R.id.btnToast);
         btnCount =(Button) findViewById(R.id.btnCount);
         txtCount = (TextView) findViewById(R.id.txtCount);
